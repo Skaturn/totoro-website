@@ -24,6 +24,7 @@ footer {
     align-items: center;
     padding: 20px;
     background-color: #f4f4f4;
+    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
 }
 
 footer img {
@@ -35,6 +36,7 @@ footer img {
 .left, .right {
     display: flex;
     align-items: center;
+    flex-basis: 50%; /* Each takes half of the footer's width */
 }
 
 .left img, .right img {
@@ -45,4 +47,27 @@ footer img {
 .left, .right {
     font-size: 16px;
     color: #555;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .banner {
+        font-size: 20px; /* Smaller text on smaller screens */
+    }
+    
+    footer {
+        flex-direction: column; /* Stack footer content vertically on small screens */
+        align-items: center;
+        text-align: center;
+    }
+    
+    .left, .right {
+        flex-basis: 100%; /* Each takes full width of the footer */
+        margin: 10px 0; /* Add vertical space between them */
+    }
+    
+    footer img {
+        width: 40px; /* Smaller icons on smaller screens */
+        height: 40px;
+    }
 }
