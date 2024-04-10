@@ -1,10 +1,9 @@
-body {
-    height: 100vh;
+html, body {
+    height: 100%; /* Ensures that html and body cover the entire content */
     margin: 0;
-    background: linear-gradient(to bottom, #62a9ff, #fceabb); /* Example gradient inspired by Studio Ghibli's sky colors */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 0;
+    background: linear-gradient(to bottom, #62a9ff, #fceabb); /* Studio Ghibli-inspired gradient */
+    background-attachment: fixed; /* Prevents the background from scrolling */
 }
 
 header {
@@ -24,7 +23,8 @@ footer {
     align-items: center;
     padding: 20px;
     background-color: #f4f4f4;
-    flex-wrap: wrap; /* Allows items to wrap in smaller screens */
+    flex-wrap: wrap;
+    text-align: center; /* Centers footer content on smaller screens */
 }
 
 footer img {
@@ -36,14 +36,14 @@ footer img {
 .left, .right {
     display: flex;
     align-items: center;
-    flex-basis: 50%; /* Each takes half of the footer's width */
+    flex-basis: 50%;
 }
 
 .left img, .right img {
     cursor: pointer;
 }
 
-/* Additional styling for the contract address */
+/* Styling for contract address */
 .left, .right {
     font-size: 16px;
     color: #555;
@@ -52,22 +52,21 @@ footer img {
 /* Media Queries for responsiveness */
 @media (max-width: 768px) {
     .banner {
-        font-size: 20px; /* Smaller text on smaller screens */
+        font-size: 20px;
     }
     
     footer {
-        flex-direction: column; /* Stack footer content vertically on small screens */
-        align-items: center;
-        text-align: center;
+        flex-direction: column;
+        padding: 10px;
     }
     
     .left, .right {
-        flex-basis: 100%; /* Each takes full width of the footer */
-        margin: 10px 0; /* Add vertical space between them */
+        flex-basis: 100%; /* Takes full width */
+        margin: 10px 0; /* Adds space between the sections */
     }
     
     footer img {
-        width: 40px; /* Smaller icons on smaller screens */
+        width: 40px;
         height: 40px;
     }
 }
