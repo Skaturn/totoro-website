@@ -1,77 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Studio Ghibli Inspired Page</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="Totoro.png" type="img/png" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="A webpage inspired by Miyazaki Hayao and Studio Ghibli and its works. A dedicated series of 2 tokens." />
+  <title>Studio Ghibli Inspired Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="Totoro.png" type="img/png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <style>
+    .bg-light.py-5 {
+      background-color: transparent !important;
+      margin-top: 15rem;
+    }
+
+    .kiki {
+      background: #3a4280;
+      color: white !important;
+    }
+
+    .toto {
+      background-color: #019048;
+      color: white;
+    }
+    .card {
+      min-height: 288px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="bg-light py-5">
+    <div class="container">
+      <h1 class="display-4 text-white font-spumoni">Studio Ghibli Inspired Page</h1>
+      <p class="lead text-white">
+        Inspired by Miyazaki Hayao and Studio Ghibli and its works. A dedicated series of 2 tokens.
+      </p>
+    </div>
+  </header>
+
   <body>
-    <header>
-      <h1>Studio Ghibli Inspired Page</h1>
-      <div class="banner">
-        Inspired by Miyazaki Hayao and Studio Ghibli and it's works. A dedicated
-        series of 2 tokens
-      </div>
-    </header>
-    <footer class="md:flex items-center justify-center gap-4">
-      <div class="left">
-        <h2 class="font-harrington text-xl">KiKi's Delivery Service</h2>
-        <p>$KIKI/SOL CA: H6CZFHkTB6wqhkpry1j2oZfYwWm8kAEQZHTiPtqa4Jze</p>
-        <div>
-          <a href="https://x.com/theghibli_kiki"
-            ><img
-              id="x-icon"
-              src="x-icon.svg"
-              alt="Twitter"
-              class="socialIconSize"
-          /></a>
-          <a href="https://t.me/ghibli_kiki"
-            ><img
-              id="telegram-icon"
-              src="telegram-icon.svg"
-              alt="Telegram"
-              class="socialIconSize"
-          /></a>
-          <a
-            href="https://www.dextools.io/app/en/solana/pair-explorer/9yx5tmSrMuNezRHt5hKKXN5e7JnC9gDjUyn7cce9W7tF?t=1712720872104"
-            ><img
-              id="dextools-icon"
-              src="dextools-icon.png"
-              alt="DexTools"
-              class="socialIconSize"
-          /></a>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card toto">
+            <!-- <img src="Totoro.png" class="card-img-top" alt="My Neighbor Totoro" /> -->
+            <div class="card-body">
+              <h2 class="card-title
+                            font-spumoni ">My Neighbor Totoro</h5>
+                <p class="card-text"> As the sisters explore their new home, they encounter and befriend playful spirits
+                  in their
+                  house and the
+                  nearby forest, most notably the massive cuddly creature known as Totoro.</p>
+                <!-- <a href="https://x.com/the_ghibli" class="btn btn-primary">Learn More</a> -->
+                <h5 class="text-center">Join the community today!</h5>
+                <p>$TOTORO/SOL CA: E1bcNNEiyiTGYuxbNWMsd54tom5WhWXPA6Z1G1QfsQ8d</p>
+                <div class="d-flex justify-content-center gap-3">
+
+                  <a href="https://x.com/the_ghibli"><img src="x-icon.svg" alt="Twitter" class="img-fluid"
+                      width="50px" /></a>
+                  <a href="https://t.me/theghibli_totoro"><img src="telegram-icon.svg" alt="Telegram" class="img-fluid"
+                      width="50px" /></a>
+                  <a
+                    href="https://www.dextools.io/app/en/solana/pair-explorer/9yx5tmSrMuNezRHt5hKKXN5e7JnC9gDjUyn7cce9W7tF?t=1712720872104"><img
+                      src="dextools-icon.png" alt="DexTools" class="img-fluid" width="50px" /></a>
+                </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="right">
-        <h2 class="font-spumoni text-xl">My Neighbor Totoro</h2>
-        <p>$TOTORO/SOL CA: E1bcNNEiyiTGYuxbNWMsd54tom5WhWXPA6Z1G1QfsQ8d</p>
-        <div>
-          <a href="https://x.com/the_ghibli"
-            ><img
-              id="x-icon"
-              src="x-icon.svg"
-              alt="Twitter"
-              class="socialIconSize"
-          /></a>
-          <a href="https://t.me/theghibli_totoro"
-            ><img
-              id="telegram-icon"
-              src="telegram-icon.svg"
-              alt="Telegram"
-              class="socialIconSize"
-          /></a>
-          <a
-            href="https://www.dextools.io/app/en/solana/pair-explorer/9yx5tmSrMuNezRHt5hKKXN5e7JnC9gDjUyn7cce9W7tF?t=1712720872104"
-            ><img
-              id="dextools-icon"
-              src="dextools-icon.png"
-              alt="DexTools"
-              class="socialIconSize"
-          /></a>
+        <div class="col">
+          <div class="card kiki">
+            <!-- <img src="Kiki.png" class="card-img-top" alt="Kiki's Delivery Service" /> -->
+            <div class="card-body">
+              <h2 class="card-title
+                  font-harrington">Kiki's Delivery Service</h5>
+                <p class="card-text">A young witch, on her mandatory year of independent life, finds fitting into a new
+                  community difficult while she supports herself by running an air courier service.</p>
+                <h5 class="text-center">Join the community today!</h5>
+                <p>$KIKI/SOL CA: H6CZFHkTB6wqhkpry1j2oZfYwWm8kAEQZHTiPtqa4Jze</p>
+                <div class="d-flex justify-content-center gap-3">
+                  <a href="https://x.com/theghibli_kiki"><img src="x-icon.svg" alt="Twitter" class="img-fluid"
+                      width="50px" /></a>
+                  <a href="https://t.me/ghibli_kiki"><img src="telegram-icon.svg" alt="Telegram" class="img-fluid"
+                      width="50px" /></a>
+                  <a
+                    href="https://www.dextools.io/app/en/solana/pair-explorer/9yx5tmSrMuNezRHt5hKKXN5e7JnC9gDjUyn7cce9W7tF?t=1712720872104"><img
+                      src="dextools-icon.png" alt="DexTools" class="img-fluid" width="50px" /></a>
+                </div>
+            </div>
+          </div>
         </div>
+
       </div>
-    </footer>
+    </div>
   </body>
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-4" style="word-wrap: anywhere;">
+        <div class="col-12 col-md-6">
+          <h2>My Neighbor Totoro</h2>
+          <p>$TOTORO/SOL CA: E1bcNNEiyiTGYuxbNWMsd54tom5WhWXPA6Z1G1QfsQ8d</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://x.com/the_ghibli"><img src="x-icon.svg" alt="Twitter" class="img-fluid" /></a>
+            <a href="https://t.me/theghibli_totoro"><img src="telegram-icon.svg" alt="Telegram" class="img-fluid" /></a>
+            <a
+              href="https://www.dextools.io/app/en/solana/pair-explorer/9yx5tmSrMuNezRHt5hKKXN5e7JnC9gDjUyn7cce9W7tF?t=1712720872104"><img
+                src="dextools-icon.png" alt="DexTools" class="img-fluid" /></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <h2>KiKi's Delivery Service</h2>
+          <p>$KIKI/SOL CA: H6CZFHkTB6wqhkpry1j2oZfYwWm8kAEQZHTiPtqa4Jze</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="https://x.com/theghibli_kiki"><img src="x-icon.svg" alt="Twitter" class="img-fluid" /></a>
+            <a href="https://t.me/ghibli_kiki"><img src="telegram-icon.svg" alt="Telegram" class="img-fluid" /></a>
+            <a
+              href="https://www.dextools.io/app/en/solana/pair-explorer/9yx5tmSrMuNezRHt5hKKXN5e7JnC9gDjUyn7cce9W7tF?t=1712720872104"><img
+                src="dextools-icon.png" alt="DexTools" class="img-fluid" /></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
