@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: system-ui, sans-serif;
 }
 
 body {
@@ -47,36 +48,55 @@ footer img {
     margin: 5px;
 }
 
-.left, .right {
+@font-face {
+    font-family: 'Spumoni Regular';
+    src: url('Spumoni Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Harrington';
+    src: url('Harrington.woff') format('woff');
+}
+
+.font-spumoni {
+    font-family: 'Spumoni Regular', sans-serif;
+}
+
+.font-harrington {
+    font-family: 'Harrington', sans-serif;
+}
+
+.text-xl {
+    font-size: 2rem;
+}
+
+/* atomic */
+.flex {
     display: flex;
-    justify-content: center;
+}
+
+.items-center {
     align-items: center;
-    flex-basis: 100%; /* On mobile they will take full width */
-    flex-direction: column; /* Stack vertically */
-    margin: 10px 0;
 }
 
-.left img, .right img {
-    cursor: pointer;
+.justify-center {
+    justify-content: center;
 }
 
-.left, .right {
-    font-size: 16px;
-    color: #555;
+.gap-4 {
+    gap: 1rem;
 }
 
+/* sm */
 @media (min-width: 768px) {
-    footer .container {
-        flex-wrap: nowrap;
+    .sm\:flex {
+        display: flex;
     }
+}
 
-    .left, .right {
-        flex-direction: row; /* Align side by side on larger screens */
-        justify-content: flex-start; /* .left aligns to the start */
-        flex-basis: auto; /* They will take only as much space as needed */
-    }
-
-    .right {
-        justify-content: flex-end; /* .right aligns to the end */
+/* md */
+@media (min-width: 1024px) {
+    .md\:flex {
+        display: flex;
     }
 }
