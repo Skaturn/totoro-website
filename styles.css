@@ -13,6 +13,11 @@ html {
   );
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 #dextswap-aggregator-widget {
   border: 0;
   border-radius: 17px;
