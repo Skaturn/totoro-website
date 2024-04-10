@@ -1,29 +1,21 @@
-html {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
 body {
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Use viewport height to ensure footer sticks to the bottom */
     background: url('totorobig.png') no-repeat center center fixed;
     background-size: cover; /* Ensures background covers the entire area */
 }
 
-/* Ensure header and footer, and content expand naturally */
-header, footer, .content {
-    width: 100%;
-}
-
-/* Simulated content div for demonstration */
-.content {
-    flex: 1; /* This will push the footer to the bottom of the page */
-    /* Height for demonstration purposes */
-    min-height: 500px; /* You can remove the height when you have real content */
+/* This will hold the content of the website and push the footer down */
+.content-expand {
+    flex: 1; /* This will expand to push the footer */
+    padding: 20px; /* For spacing, adjust as needed */
 }
 
 header {
@@ -38,13 +30,15 @@ header {
 }
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
     background-color: #f4f4f4;
-    flex-wrap: wrap;
     text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer img {
@@ -55,10 +49,11 @@ footer img {
 
 .left, .right {
     display: flex;
-    flex-direction: row; /* Default to row */
     justify-content: center;
     align-items: center;
-    flex-basis: 50%;
+    flex-basis: 100%; /* On mobile they will take full width */
+    flex-direction: column; /* Stack vertically */
+    margin: 10px 0;
 }
 
 .left img, .right img {
@@ -70,29 +65,18 @@ footer img {
     color: #555;
 }
 
-@media (max-width: 768px) {
-    .banner {
-        font-size: 20px;
-    }
-
-    footer {
-        flex-direction: column;
+@media (min-width: 768px) {
+    footer .container {
+        flex-wrap: nowrap;
     }
 
     .left, .right {
-        flex-basis: 100%; /* Full width */
-        flex-direction: column; /* Stack vertically */
-        align-items: flex-start; /* Align to start for .left */
-        margin: 10px 0;
+        flex-direction: row; /* Align side by side on larger screens */
+        justify-content: flex-start; /* .left aligns to the start */
+        flex-basis: auto; /* They will take only as much space as needed */
     }
 
     .right {
-        align-items: flex-end; /* Align to end for .right */
-    }
-
-    footer img {
-        width: 40px;
-        height: 40px;
-        margin: 5px;
+        justify-content: flex-end; /* .right aligns to the end */
     }
 }
