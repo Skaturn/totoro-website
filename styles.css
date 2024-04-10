@@ -1,0 +1,48 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #62a9ff, #fceabb); /* Example gradient inspired by Studio Ghibli's sky colors */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner {
+    font-size: 24px;
+    color: #333;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+footer img {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+}
+
+.left img, .right img {
+    cursor: pointer;
+}
+
+/* Additional styling for the contract address */
+.left, .right {
+    font-size: 16px;
+    color: #555;
+}
