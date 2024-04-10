@@ -1,9 +1,9 @@
 html, body {
-    height: 100%; /* Ensures that html and body cover the entire content */
+    height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #62a9ff, #fceabb); /* Studio Ghibli-inspired gradient */
-    background-attachment: fixed; /* Prevents the background from scrolling */
+    background: url('totorobig.png') no-repeat center center fixed;
+    background-size: cover; /* Covers the entire viewport without repeating */
 }
 
 header {
@@ -24,7 +24,7 @@ footer {
     padding: 20px;
     background-color: #f4f4f4;
     flex-wrap: wrap;
-    text-align: center; /* Centers footer content on smaller screens */
+    text-align: center;
 }
 
 footer img {
@@ -33,40 +33,4 @@ footer img {
     margin: 0 5px;
 }
 
-.left, .right {
-    display: flex;
-    align-items: center;
-    flex-basis: 50%;
-}
-
-.left img, .right img {
-    cursor: pointer;
-}
-
-/* Styling for contract address */
-.left, .right {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Media Queries for responsiveness */
-@media (max-width: 768px) {
-    .banner {
-        font-size: 20px;
-    }
-    
-    footer {
-        flex-direction: column;
-        padding: 10px;
-    }
-    
-    .left, .right {
-        flex-basis: 100%; /* Takes full width */
-        margin: 10px 0; /* Adds space between the sections */
-    }
-    
-    footer img {
-        width: 40px;
-        height: 40px;
-    }
-}
+.left
