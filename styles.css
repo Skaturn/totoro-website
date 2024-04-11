@@ -10,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Use viewport height to ensure footer sticks to the bottom */
-  background: url("totorobig.png") no-repeat center center fixed;
+  background: url("totoro-bg.png") no-repeat center center fixed;
   background-size: cover; /* Ensures background covers the entire area */
 }
 
