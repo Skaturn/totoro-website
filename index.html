@@ -21,14 +21,25 @@
       background-color: transparent !important;
     }
 
-    .kiki {
-      background: #3a4280;
+    .kiki,
+    .toto {
+      backdrop-filter: blur(10px);
+      /* Apply the blur */
+      -webkit-backdrop-filter: blur(10px);
+      /* For Safari */
       color: white !important;
     }
 
+    .kiki {
+      /* Semi-transparent purple background for the frosted glass effect */
+      background-color: rgba(58, 66, 128, 0.7);
+      /* Adjust the alpha value for desired transparency */
+    }
+
     .toto {
-      background-color: #019048;
-      color: white;
+      /* Semi-transparent green background for the frosted glass effect */
+      background-color: rgba(1, 144, 72, 0.7);
+      /* Adjust the alpha value for desired transparency */
     }
 
     .card {

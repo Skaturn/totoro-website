@@ -12,6 +12,31 @@ body {
   min-height: 100vh; /* Use viewport height to ensure footer sticks to the bottom */
   background: url("totoro-bg.png") no-repeat center center fixed;
   background-size: cover; /* Ensures background covers the entire area */
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.35
+  ); /* Adjust the color and opacity to your liking */
+  z-index: -1; /* Ensures the overlay doesn't cover content */
+}
+
+.content-expand,
+footer,
+header,
+.navbar {
+  position: relative;
+  z-index: 1;
 }
 
 header {
@@ -123,16 +148,6 @@ footer img {
   background-color: transparent !important;
 }
 
-.kiki {
-  background: #3a4280;
-  color: white !important;
-}
-
-.toto {
-  background-color: #019048;
-  color: white;
-}
-
 .card {
   display: flex;
   flex-direction: column;
@@ -218,4 +233,31 @@ footer img {
   .card {
     max-width: 570px;
   }
+}
+
+.kiki,
+.toto {
+  backdrop-filter: blur(10px); /* Apply the blur */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  color: white !important;
+}
+
+.kiki {
+  /* Semi-transparent purple background for the frosted glass effect */
+  background-color: rgba(
+    58,
+    66,
+    128,
+    0.7
+  ); /* Adjust the alpha value for desired transparency */
+}
+
+.toto {
+  /* Semi-transparent green background for the frosted glass effect */
+  background-color: rgba(
+    1,
+    144,
+    72,
+    0.7
+  ); /* Adjust the alpha value for desired transparency */
 }
