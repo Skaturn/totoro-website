@@ -22,12 +22,7 @@ body::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.35
-  ); /* Adjust the color and opacity to your liking */
+  background: rgba(0, 0, 0, 0.35);
   z-index: -1; /* Ensures the overlay doesn't cover content */
 }
 
@@ -260,4 +255,16 @@ footer img {
     72,
     0.7
   ); /* Adjust the alpha value for desired transparency */
+}
+
+.navbar-toggler {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Apply the blur */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border: none; /* Optional: removes the border */
 }
