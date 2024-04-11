@@ -1,0 +1,141 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Use viewport height to ensure footer sticks to the bottom */
+  background: url("totoro-bg.png") no-repeat center center fixed;
+  background-size: cover; /* Ensures background covers the entire area */
+}
+
+header {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner {
+  font-size: 24px;
+  color: #333;
+}
+
+footer {
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+.content-expand {
+  flex: 1;
+  padding: 20px;
+}
+
+/* START FONTS */
+
+@font-face {
+  font-family: "Spumoni Regular";
+  src: url("Spumoni Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Harrington";
+  src: url("Harrington.woff") format("woff");
+}
+
+.font-spumoni {
+  font-family: "Spumoni Regular", sans-serif;
+}
+
+.font-harrington {
+  font-family: "Harrington", sans-serif;
+}
+
+.text-xl {
+  font-size: 2rem;
+}
+
+/* END OF FONTS */
+
+.title-container {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.totoro-title-svg {
+  width: 80vw;
+  max-width: 800px;
+}
+
+/* atomic */
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+/* sm */
+@media (min-width: 768px) {
+  .sm\:flex {
+    display: flex;
+  }
+}
+
+/* md */
+@media (min-width: 1024px) {
+  .md\:flex {
+    display: flex;
+  }
+}
+
+.bg-light.py-5 {
+  background-color: transparent !important;
+}
+
+.kiki {
+  background: #3a4280;
+  color: white !important;
+}
+
+.toto {
+  background-color: #019048;
+  color: white;
+}
+.card {
+  min-height: 288px;
+}
+
+.shadow-text {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

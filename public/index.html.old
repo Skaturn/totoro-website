@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$TOTORO</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://terminal.jup.ag/main-v2.js"></script>
+  </head>
+  <body>
+    <div id="title-container">
+      <img id="title-svg" src="alternate-title.jpg" alt="Title" />
+    </div>
+
+    <div id="after-video-content" style="display: none">
+      <div class="head-container">
+        <img id="left-image" src="WayneHead.png" alt="Left Head" />
+      </div>
+      <div class="head-container">
+        <img id="right-image" src="GarthHead.png" alt="Right Head" />
+      </div>
+    </div>
+
+    <div id="integrated-terminal"></div>
+
+    <!-- FOOTER -->
+
+    <div id="footer-container">
+      <div id="flex-padding"></div>
+      <div id="coin-address-container">
+        <div id="coin-address" class="jua">
+          $TOTORO Contract Address: E1bcNNEiyiTGYuxbNWMsd54tom5WhWXPA6Z1G1QfsQ8d
+          &nbsp
+          $KIKI Contract Address: H6CZFHkTB6wqhkpry1j2oZfYwWm8kAEQZHTiPtqa4Jze
+        </div>
+        <div id="copy-button">
+          <img
+            src="copy.svg"
+            height="40"
+            onclick="copyText()"
+            class="copy-icon"
+          />
+          <span id="tooltip" class="tooltip jua">Copied!</span>
+        </div>
+        </div>
+        <div id="copy-button">
+          <img
+            src="copy.svg"
+            height="40"
+            onclick="copyText()"
+            class="copy-icon"
+          />
+          <span id="tooltip" class="tooltip jua">Copied!</span>
+        </div>
+      </div>
+      </div>
+      <!-- Left Align for $KIKI BUTTONS -->
+      <div id="social-button-container-kiki">
+        <div id="social-button-wrapper">
+          <div>
+            <a href="https://x.com/theghibli_kiki">
+              <image
+                id="x-icon"
+                src="x-icon.svg"
+                alt="Twitter"
+                class="socialIconSize"
+              />
+            </a>
+          </div>
+          <!-- <div>
+            <a href="">
+              <image
+                id="discord-icon"
+                src="discord-icon.svg"
+                alt="Discord"
+                class="socialIconSize"
+              />
+            </a>
+          </div> -->
+          <div>
+            <a href="https://t.me/ghibli_kiki">
+              <image
+                id="telegram-icon"
+                src="telegram-icon.svg"
+                alt="Telegram"
+                class="socialIconSize"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.dextools.io/app/en/solana/pair-explorer/9yx5tmSrMuNezRHt5hKKXN5e7JnC9gDjUyn7cce9W7tF?t=1712720872104"
+            >
+              <image
+                id="dextools-icon"
+                src="dextools-icon.png"
+                alt="Telegram"
+                class="socialIconSize"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Right Align for $TOTORO BUTTONS -->
+      <div id="social-button-container">
+        <div id="social-button-wrapper">
+          <div>
+            <a href="https://twitter.com/the_ghibli">
+              <image
+                id="x-icon"
+                src="x-icon.svg"
+                alt="Twitter"
+                class="socialIconSize"
+              />
+            </a>
+          </div>
+          <!-- <div>
+            <a href="">
+              <image
+                id="discord-icon"
+                src="discord-icon.svg"
+                alt="Discord"
+                class="socialIconSize"
+              />
+            </a>
+          </div> -->
+          <div>
+            <a href="https://t.me/theghibli_totoro">
+              <image
+                id="telegram-icon"
+                src="telegram-icon.svg"
+                alt="Telegram"
+                class="socialIconSize"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.dextools.io/app/en/solana/pair-explorer/9yx5tmSrMuNezRHt5hKKXN5e7JnC9gDjUyn7cce9W7tF?t=1712720872104"
+            >
+              <image
+                id="dextools-icon"
+                src="dextools-icon.png"
+                alt="Telegram"
+                class="socialIconSize"
+              />
+            </a>
+          </div>
+          <!-- <div>
+            <a
+              href=""
+            >
+              <image
+                id="instagram-icon"
+                src="instagram-icon.svg"
+                alt="Instagram"
+                class="socialIconSize"
+              />
+            </a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- DEX CONTAINER -->
+    <div id="dex-container">
+      <!-- <div>
+        <a
+          href="https://www.dextools.io/app/en/solana/pair-explorer/4kHZTN9FJF38G62koukyFQpuN9RSQJDQtGAw38WEHzwN?t=1711918818439"
+          id="button"
+          class="jua"
+        >
+          <img src="DEXTools Isotype_ blue (official color).png" height="50" />
+        </a>
+      </div> -->
+
+      <iframe
+        id="dextswap-aggregator-widget"
+        title="DEXTswap Aggregator"
+        width="400"
+        height="430"
+        scrolling="no"
+        src="https://www.dextools.io/widget-aggregator/en/swap/solana/E1bcNNEiyiTGYuxbNWMsd54tom5WhWXPA6Z1G1QfsQ8d?theme=dark"
+      ></iframe>
+    </div>
+
+    <!-- DEXSCREENER -->
+
+    <div id="dexscreener-embed-container">
+      <style>
+        #dexscreener-embed {
+          position: relative;
+          width: 20%;
+          padding-bottom: 125%;
+        }
+        @media (min-width: 280px) {
+          #dexscreener-embed {
+            padding-bottom: 65%;
+          }
+        }
+        #dexscreener-embed iframe {
+          position: absolute;
+          width: 100%;
+          height: 50%;
+          top: 0;
+          left: 0;
+          border: 0;
+        }
+      </style>
+      <div id="dexscreener-embed">
+        <iframe
+          src="https://dexscreener.com/solana/4kHZTN9FJF38G62koukyFQpuN9RSQJDQtGAw38WEHzwN?embed=1&theme=dark"
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

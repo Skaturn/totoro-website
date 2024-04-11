@@ -1,0 +1,25 @@
+:root {
+  font-family: system-ui;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1f2227;
+  color: #fff;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: 'Spumoni Regular';
+  src: url('Spumoni Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Harrington';
+  src: url('Harrington.woff') format('woff');
+}
