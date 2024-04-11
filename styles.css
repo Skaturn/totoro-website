@@ -139,3 +139,36 @@ footer img {
 .shadow-text {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 768px) {
+  #offcanvasNavbar {
+    width: 50%; /* 50% of the viewport width on mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  #offcanvasNavbar {
+    width: 300px; /* Fixed width for desktop */
+  }
+}
+
+.offcanvas-backdrop.show {
+  backdrop-filter: blur(10px);
+}
+
+.offcanvas {
+  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+.offcanvas-backdrop {
+  backdrop-filter: blur(10px) !important;
+}
+
+.offcanvas {
+  background-color: rgba(48, 98, 142, 0.75) !important;
+}
+
+.offcanvas-end .nav-link {
+  color: white !important; /* Ensures text color is white for links */
+}
