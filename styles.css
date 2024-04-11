@@ -49,6 +49,8 @@ footer img {
   margin: 5px;
 }
 
+/* START FONTS */
+
 @font-face {
   font-family: "Spumoni Regular";
   src: url("Spumoni Regular.woff") format("woff");
@@ -70,6 +72,8 @@ footer img {
 .text-xl {
   font-size: 2rem;
 }
+
+/* END OF FONTS */
 
 .title-container {
   width: 100%;
