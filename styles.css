@@ -132,8 +132,33 @@ footer img {
   background-color: #019048;
   color: white;
 }
+
 .card {
-  min-height: 288px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 570px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.upper-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.lower-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .shadow-text {
@@ -142,13 +167,13 @@ footer img {
 
 @media (max-width: 768px) {
   #offcanvasNavbar {
-    width: 50%; /* 50% of the viewport width on mobile */
+    width: 50%;
   }
 }
 
 @media (min-width: 769px) {
   #offcanvasNavbar {
-    width: 300px; /* Fixed width for desktop */
+    width: 300px;
   }
 }
 
@@ -157,8 +182,8 @@ footer img {
 }
 
 .offcanvas {
-  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent white */
-  backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
 }
 
 .offcanvas-backdrop {
@@ -170,5 +195,27 @@ footer img {
 }
 
 .offcanvas-end .nav-link {
-  color: white !important; /* Ensures text color is white for links */
+  color: white !important;
+}
+
+.ca-title {
+  font-weight: 700;
+}
+
+/* Card container max-width because it looked jank wider than this width */
+
+.custom-container {
+  max-width: 1140px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1140px) {
+  .custom-container {
+    padding-left: calc((100% - 1140px) / 2);
+    padding-right: calc((100% - 1140px) / 2);
+  }
+  .card {
+    max-width: 570px;
+  }
 }
