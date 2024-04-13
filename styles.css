@@ -12,18 +12,9 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
-}
-
-/* Don't change this it's for iOS Safari that doesn't support fixed backgrounds */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: url("totoro-bg-dark.webp") no-repeat center center / cover;
-  z-index: -1;
+  min-height: 100vh; /* Use viewport height to ensure footer sticks to the bottom */
+  background: url("totoro-bg-dark.webp") no-repeat center center fixed;
+  background-size: cover; /* Ensures background covers the entire area */
 }
 
 .content-expand,
@@ -35,7 +26,6 @@ header,
 }
 
 header {
-  background-color: #f4f4f4;
   padding: 20px;
   text-align: center;
 }
@@ -47,7 +37,6 @@ header {
 
 footer {
   padding: 20px;
-  background-color: #f4f4f4;
   text-align: center;
 }
 
