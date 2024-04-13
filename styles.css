@@ -188,15 +188,18 @@ footer img {
 }
 
 .offcanvas-backdrop.show {
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
 .offcanvas {
   background-color: rgba(0, 0, 0, 0.75);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
 .offcanvas-backdrop {
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px) !important;
 }
 
@@ -232,8 +235,8 @@ footer img {
 
 .kiki,
 .toto {
-  backdrop-filter: blur(10px); /* Apply the blur */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
   color: white !important;
 }
 
@@ -264,7 +267,17 @@ footer img {
     255,
     0.5
   ); /* Semi-transparent white background */
-  backdrop-filter: blur(10px); /* Apply the blur */
   -webkit-backdrop-filter: blur(10px); /* For Safari */
+  backdrop-filter: blur(10px); /* Apply the blur */
   border: none; /* Optional: removes the border */
+}
+
+.copyButton {
+  background-color: transparent !important;
+  border: none !important;
+  word-wrap: anywhere;
+}
+
+.transparent-bg {
+  background-color: transparent !important;
 }
