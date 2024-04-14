@@ -13,7 +13,7 @@ body {
   position: relative;
   overflow-x: hidden;
   min-height: 100vh; /* Use viewport height to ensure footer sticks to the bottom */
-  background: url("totoro-bg-dark.webp") no-repeat center center fixed;
+  background: url("./assets/totoro-bg-dark.webp") no-repeat center center fixed;
   background-size: cover; /* Ensures background covers the entire area */
 }
 
@@ -61,12 +61,12 @@ footer img {
 
 @font-face {
   font-family: "Spumoni Regular";
-  src: url("Spumoni Regular.woff") format("woff");
+  src: url("./fonts/Spumoni Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Harrington";
-  src: url("Harrington.woff") format("woff");
+  src: url("./fonts/Harrington.woff") format("woff");
 }
 
 .font-spumoni {
